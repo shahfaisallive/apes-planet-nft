@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import Countdown from "react-countdown";
 import CardModal from './CardModal'
 
 import 'swiper/scss';
@@ -61,12 +60,7 @@ const LiveAuction = props => {
                                                                         <div className="card-media">
                                                                             <Link to="#"><img src={item.img} alt="axies" /></Link>
                                                                             <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
-                                                                            {/* <div className="featured-countdown">
-                                                                                <span className="slogan"></span>
-                                                                                <Countdown date={Date.now() + 500000000}>
-                                                                                    <span>You are good to go!</span>
-                                                                                </Countdown>
-                                                                            </div> */}
+                                                                           
                                                                             <div className="button-place-bid">
                                                                                 <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
                                                                             </div>
