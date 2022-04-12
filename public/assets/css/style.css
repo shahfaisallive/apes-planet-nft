@@ -3313,3 +3313,6 @@ header{
     top        : 0px;
     color      : #fff;
 }
+.react-tabs__tab:focus:after{
+    background: transparent !important;
+}
