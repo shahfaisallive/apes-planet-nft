@@ -4529,7 +4529,7 @@ section.today-picks {
 
 .is_dark .tab-create-item .tablinks:hover ,
 .is_dark .create-item .react-tabs__tab.react-tabs__tab--selected {
-    background: #fff;
+    background: transparent !important;
 }
 
 /* tab content */
