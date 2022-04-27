@@ -7,6 +7,7 @@ import TodayPicks from "./../components/TodayPicks/TodayPicks";
 import PopularCollection from "./../components/PopularCollection/PopularCollection";
 import Create from "./../components/Create/Create";
 import Footer from "./../components/Layout/Footer";
+import FixedNfts from "./../components/Fixed Nfts/FixedNfts";
 export default function Home() {
   return (
     <div>
@@ -35,6 +36,7 @@ export default function Home() {
         <Header />
         <Slider />
         <LiveAuction />
+        <FixedNfts />
         <TopSeller />
         <TodayPicks />
         <PopularCollection />

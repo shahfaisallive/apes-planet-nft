@@ -5,7 +5,7 @@ import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
 import CardModal from "../components/Layout/CardModal";
 
-// import avt from "../assets/images/avatar/avt-author-tab.jpg";
+const avt = "./assets/images/avatar/avt-author-tab.jpg";
 const img1 = "./assets/svg/live-auction1.png";
 const imga1 = "./assets/svg/live-auction1.png";
 const img2 = "./assets/svg/live-auction2.png";
@@ -428,7 +428,7 @@ const Authors02 = () => {
           <div className="flat-tabs tab-authors">
             <div className="author-profile flex">
               <div className="feature-profile">
-                {/* <img src={avt} alt="Axies" className="avatar" /> */}
+                <img src={avt} alt="Axies" className="avatar" />
               </div>
               <div className="infor-profile">
                 <span>Creator Profile</span>

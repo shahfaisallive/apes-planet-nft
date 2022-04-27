@@ -29,6 +29,7 @@ const imga7 = "./assets/svg/today-pick7.png";
 const img8 = "./assets/svg/today-pick8.png";
 const imga8 = "./assets/svg/today-pick8.png";
 const ExploreData = () => {
+  const [showFixed, setShowFixed] = useState(false);
   const [dataTab] = useState([
     {
       id: 1,
@@ -50,6 +51,10 @@ const ExploreData = () => {
       id: 5,
       title: "Sports",
     },
+    {
+      id: 6,
+      title: "Fixed",
+    },
   ]);
   const [dataPanel] = useState([
     {
@@ -67,6 +72,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection1,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 2,
@@ -81,6 +87,7 @@ const ExploreData = () => {
           imgCollection: imgCollection2,
           nameCollection: "Creative Art 3D",
           feature: "Coming Soon",
+          for_bid: false,
         },
         {
           id: 3,
@@ -94,6 +101,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection3,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 4,
@@ -107,6 +115,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection4,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 5,
@@ -120,6 +129,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection5,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 6,
@@ -133,6 +143,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection6,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 7,
@@ -146,6 +157,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection7,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 8,
@@ -159,6 +171,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection8,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 9,
@@ -172,6 +185,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection1,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 10,
@@ -185,6 +199,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection2,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 11,
@@ -198,6 +213,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection3,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 12,
@@ -211,6 +227,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection4,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 13,
@@ -224,6 +241,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection5,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 14,
@@ -237,6 +255,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection6,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 15,
@@ -250,6 +269,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection7,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
         {
           id: 16,
@@ -263,6 +283,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection8,
           nameCollection: "Creative Art 3D",
+          for_bid: false,
         },
       ],
     },
@@ -281,6 +302,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection2,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 3,
@@ -294,6 +316,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection3,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 4,
@@ -307,6 +330,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection4,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 5,
@@ -320,6 +344,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection5,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
       ],
     },
@@ -338,6 +363,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection1,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 3,
@@ -351,6 +377,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection3,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 4,
@@ -364,6 +391,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection4,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 5,
@@ -377,6 +405,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection5,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
       ],
     },
@@ -395,6 +424,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection1,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 2,
@@ -408,6 +438,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection2,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 3,
@@ -421,6 +452,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection3,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 5,
@@ -434,6 +466,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection5,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 7,
@@ -447,6 +480,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection7,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
       ],
     },
@@ -465,6 +499,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection2,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 3,
@@ -478,6 +513,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection3,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 4,
@@ -491,6 +527,7 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection4,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
         {
           id: 6,
@@ -504,8 +541,182 @@ const ExploreData = () => {
           wishlist: "100",
           imgCollection: imgCollection6,
           nameCollection: "Creative Art 3D",
+          for_bid: true,
         },
       ],
+    },
+    {
+      id: 6,
+      dataContent: [
+        {
+          id: 1,
+          img: img6,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga6,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection6,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+        {
+          id: 2,
+          img: img7,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga7,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection7,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+        {
+          id: 3,
+          img: img8,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga8,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection8,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+        {
+          id: 4,
+          img: img1,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga1,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection1,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+        {
+          id: 5,
+          img: img2,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga2,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection2,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+        {
+          id: 6,
+          img: img3,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga3,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection3,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+        {
+          id: 7,
+          img: img4,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga4,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection4,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+        {
+          id: 8,
+          img: img5,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga5,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection5,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+        {
+          id: 9,
+          img: img6,
+          title: "The RenaiXance Rising the sun ",
+          tags: "bsc",
+          imgAuthor: imga6,
+          nameAuthor: "SalvadorDali",
+          price: "4.89 SOL",
+          priceChange: "$12.246",
+          wishlist: "100",
+          imgCollection: imgCollection6,
+          nameCollection: "Creative Art 3D",
+          for_bid: false,
+        },
+      ],
+    },
+  ]);
+  const [FixedNft] = useState([
+    {
+      id: 1,
+      img: img1,
+      title: "The RenaiXance Rising the sun ",
+      tags: "bsc",
+      imgAuthor: imga1,
+      nameAuthor: "SalvadorDali",
+      price: "4.89 SOL",
+      priceChange: "$12.246",
+      wishlist: "100",
+      imgCollection: imgCollection1,
+      nameCollection: "Creative Art 3D",
+    },
+    {
+      id: 2,
+      img: img2,
+      title: "The RenaiXance Rising the sun ",
+      tags: "bsc",
+      imgAuthor: imga2,
+      nameAuthor: "SalvadorDali",
+      price: "4.89 SOL",
+      priceChange: "$12.246",
+      wishlist: "100",
+      imgCollection: imgCollection2,
+      nameCollection: "Creative Art 3D",
+      feature: "Coming Soon",
+    },
+    {
+      id: 3,
+      img: img3,
+      title: "The RenaiXance Rising the sun ",
+      tags: "bsc",
+      imgAuthor: imga3,
+      nameAuthor: "SalvadorDali",
+      price: "4.89 SOL",
+      priceChange: "$12.246",
+      wishlist: "100",
+      imgCollection: imgCollection3,
+      nameCollection: "Creative Art 3D",
     },
   ]);
 
@@ -566,83 +777,140 @@ const ExploreData = () => {
                 <Tabs>
                   <TabList>
                     {dataTab.map((data) => (
-                      <Tab key={data.id}>{data.title}</Tab>
+                      <Tab key={data.id} onClick={() => setShowFixed(false)}>
+                        {data.title}
+                      </Tab>
                     ))}
                   </TabList>
                   {dataPanel.map((data) => (
                     <TabPanel key={data.id}>
-                      {data.dataContent.slice(0, visible).map((item) => (
-                        <div
-                          key={item.id}
-                          className={`sc-card-product explode style2 mg-bt`}
-                        >
-                          <div className="card-media">
-                            <Link href="#">
-                              <a>
-                                <img src={item.img} alt="Axies" />
-                              </a>
-                            </Link>
-                            <div className="button-place-bid">
-                              <button
-                                onClick={() => setModalShow(true)}
-                                className="sc-button style-place-bid style bag fl-button pri-3"
-                              >
-                                <span>Place Bid</span>
-                              </button>
-                            </div>
-
-                            <div className="coming-soon">{item.feature}</div>
-                          </div>
-                          <div className="card-title">
-                            <h5>
+                      {data.dataContent.slice(0, visible).map((item) =>
+                        item.for_bid ? (
+                          <div
+                            key={item.id}
+                            className={`sc-card-product explode style2 mg-bt`}
+                          >
+                            <div className="card-media">
                               <Link href="#">
-                                <a>"{item.title}"</a>
+                                <a>
+                                  <img src={item.img} alt="Axies" />
+                                </a>
                               </Link>
-                            </h5>
-                          </div>
-                          <div className="meta-info">
-                            <div className="author">
-                              <div className="avatar">
-                                <img src={item.imgAuthor} alt="Axies" />
+                              <div className="button-place-bid">
+                                <button
+                                  onClick={() => setModalShow(true)}
+                                  className="sc-button style-place-bid style bag fl-button pri-3"
+                                >
+                                  <span>Place Bid</span>
+                                </button>
                               </div>
-                              <div className="info">
-                                <span>Creator</span>
-                                <h6>
-                                  {" "}
-                                  <Link href="#">
-                                    <a>{item.nameAuthor}</a>
-                                  </Link>
-                                </h6>
+
+                              <div className="coming-soon">{item.feature}</div>
+                            </div>
+                            <div className="card-title">
+                              <h5>
+                                <Link href="#">
+                                  <a>"{item.title}"</a>
+                                </Link>
+                              </h5>
+                            </div>
+                            <div className="meta-info">
+                              <div className="author">
+                                <div className="avatar">
+                                  <img src={item.imgAuthor} alt="Axies" />
+                                </div>
+                                <div className="info">
+                                  <span>Creator</span>
+                                  <h6>
+                                    {" "}
+                                    <Link href="#">
+                                      <a>{item.nameAuthor}</a>
+                                    </Link>
+                                  </h6>
+                                </div>
+                              </div>
+                              <div className="tags">{item.tags}</div>
+                            </div>
+                            <div className="card-bottom style-explode">
+                              <div className="price">
+                                <span>Current Bid</span>
+                                <div className="price-details">
+                                  <h5>{item.price}</h5>
+                                  <span>= {item.priceChange}</span>
+                                </div>
+                              </div>
+                              <Link
+                                href="/activity"
+                                className="view-history reload"
+                              >
+                                <a>View History</a>
+                              </Link>
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            key={item.id}
+                            className={`sc-card-product explode style2 mg-bt`}
+                          >
+                            <div className="card-media">
+                              <Link href="#">
+                                <a>
+                                  <img src={item.img} alt="Axies" />
+                                </a>
+                              </Link>
+                              <div className="button-place-bid">
+                                <button className="sc-button style-place-bid style bag fl-button pri-3">
+                                  <span>Buy Now</span>
+                                </button>
+                              </div>
+
+                              <div className="coming-soon">{item.feature}</div>
+                            </div>
+                            <div className="card-title">
+                              <h5>
+                                <Link href="#">
+                                  <a>"{item.title}"</a>
+                                </Link>
+                              </h5>
+                            </div>
+                            <div className="meta-info">
+                              <div className="author">
+                                <div className="avatar">
+                                  <img src={item.imgAuthor} alt="Axies" />
+                                </div>
+                                <div className="info">
+                                  <span>Creator</span>
+                                  <h6>
+                                    {" "}
+                                    <Link href="#">
+                                      <a>{item.nameAuthor}</a>
+                                    </Link>
+                                  </h6>
+                                </div>
+                              </div>
+                              <div className="tags">{item.tags}</div>
+                            </div>
+                            <div className="card-bottom style-explode">
+                              <div className="price">
+                                <span>Current Price </span>
+                                <div className="price-details">
+                                  <h5>{item.price}</h5>
+                                  <span>= {item.priceChange}</span>
+                                </div>
                               </div>
                             </div>
-                            <div className="tags">{item.tags}</div>
                           </div>
-                          <div className="card-bottom style-explode">
-                            <div className="price">
-                              <span>Current Bid</span>
-                              <div className="price-details">
-                                <h5>{item.price}</h5>
-                                <span>= {item.priceChange}</span>
-                              </div>
-                            </div>
-                            <Link
-                              href="/activity"
-                              className="view-history reload"
-                            >
-                              <a>View History</a>
-                            </Link>
-                          </div>
-                        </div>
-                      ))}
+                        )
+                      )}
                       {visible < data.dataContent.length && (
                         <div className="col-md-12 wrap-inner load-more text-center">
                           <a
                             href="#"
                             id="load-more"
                             className="sc-button loadmore fl-button pri-3"
-                            onClick={(e)=>{
-                                e.preventDefault()
-                                showMoreItems()
+                            onClick={(e) => {
+                              e.preventDefault();
+                              showMoreItems();
                             }}
                           >
                             {" "}

@@ -3558,7 +3558,7 @@ section.today-picks {
 
 /* author-tab -----------------------------------------*/
 .tab-authors .author-profile {
-    /* background: url("../images/item-background/bg-authors.jpg") no-repeat center; */
+    background: url("../images/item-background/bg-authors.jpg") no-repeat center;
     background-size: cover;
     -webkit-border-radius: 12px 12px 0 0;
     -ms-border-radius: 12px 12px 0 0;

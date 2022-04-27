@@ -24,6 +24,11 @@ const menus = [
     name: "Contact",
     links: "/contact",
   },
+  {
+    id: 8,
+    name: "Admin",
+    links: "/admin",
+  },
 ];
 
 export default menus;

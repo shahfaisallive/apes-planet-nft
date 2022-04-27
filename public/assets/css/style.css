@@ -3316,3 +3316,7 @@ header{
 .react-tabs__tab:focus:after{
     background: transparent !important;
 }
+.redeem{
+    border-bottom : 1px solid white;
+    padding-bottom :10px
+}
