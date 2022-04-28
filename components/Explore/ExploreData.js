@@ -810,7 +810,7 @@ const ExploreData = () => {
                             <div className="card-title">
                               <h5>
                                 <Link href="#">
-                                  <a>"{item.title}"</a>
+                                  <a>{item.title}</a>
                                 </Link>
                               </h5>
                             </div>

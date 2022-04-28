@@ -21,7 +21,7 @@ const FixedNfts = () => {
               <div className="heading-live-auctions">
                 <h3 className="tf-title pb-20">Fixed NFTs</h3>
                 <Link href="/explore">
-                  <a class="exp style2">EXPLORE MORE</a>
+                  <a className="exp style2">EXPLORE MORE</a>
                 </Link>
               </div>
             </div>
@@ -74,7 +74,7 @@ const FixedNfts = () => {
 
                                 <div className="button-place-bid">
                                   <button
-                                   
+
                                     className="sc-button style-place-bid style bag fl-button pri-3"
                                   >
                                     <span>Buy Now</span>
@@ -84,7 +84,7 @@ const FixedNfts = () => {
                               <div className="card-title">
                                 <h5>
                                   <Link href="/nft-detail">
-                                    <a>"{item.title}"</a>
+                                    <a>{item.title}</a>
                                   </Link>
                                 </h5>
                                 <div className="tags">{item.tags}</div>

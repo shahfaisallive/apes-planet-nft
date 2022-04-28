@@ -535,7 +535,7 @@ const Authors02 = () => {
                                 <div className="card-title mg-bt-16">
                                   <h5>
                                     <Link href="#">
-                                      <a>"{data.title}"</a>
+                                      <a>{data.title}</a>
                                     </Link>
                                   </h5>
                                 </div>

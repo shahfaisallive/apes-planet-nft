@@ -54,20 +54,20 @@ export default function Admin() {
               <div className="row">
                 <div className="col-lg-10 m-auto">
                   <div>
-                    <h4 class="heading" style={{ color: "rgb(115, 222, 78)" }}>
+                    <h4 className="heading" style={{ color: "rgb(115, 222, 78)" }}>
                       Redeem Requests
                     </h4>
                   </div>
                   <div style={{ marginTop: "20px" }}>
-                    <div class="client-infor sc-card-product">
+                    <div className="client-infor sc-card-product">
                       {redeemList.map((item) => <>
-                        <div class="meta-info redeem" style={{ cursor: "pointer" }}>
-                          <div class="author"><div class="avatar"><img src={item.img} alt="Axies" /></div><div class="info"><span>Requested By</span><h6> <a href="#">{item.name}</a> </h6></div></div>
+                        <div className="meta-info redeem" style={{ cursor: "pointer" }}>
+                          <div className="author"><div className="avatar"><img src={item.img} alt="Axies" /></div><div className="info"><span>Requested By</span><h6> <a href="#">{item.name}</a> </h6></div></div>
 
-                          <div class="author"><div class="avatar"></div><div class="info"><span>Banana Points</span><h6> <a href="#" className="text-center" >{item.points}</a> </h6></div></div>
-                          <div class="author"><div class="avatar"></div><div class="info"><span></span><h6> <a href="#" className="text-center" >{item.address}</a> </h6></div></div>
-                          <div class="author"><div class="avatar"></div><div class="info"><span></span><h6>
-                            <button class="sc-button pri-3 btn-sm">Transfer</button> </h6></div></div>
+                          <div className="author"><div className="avatar"></div><div className="info"><span>Banana Points</span><h6> <a href="#" className="text-center" >{item.points}</a> </h6></div></div>
+                          <div className="author"><div className="avatar"></div><div className="info"><span></span><h6> <a href="#" className="text-center" >{item.address}</a> </h6></div></div>
+                          <div className="author"><div className="avatar"></div><div className="info"><span></span><h6>
+                            <button className="sc-button pri-3 btn-sm">Transfer</button> </h6></div></div>
                         </div>
                         <br />
                       </>)}
